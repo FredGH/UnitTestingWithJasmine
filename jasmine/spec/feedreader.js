@@ -157,8 +157,8 @@ $(function() {
         });
 
         function newFeeds() {
-            it('index [' + (i-1) + '] and [' + i + '] are different', function(done) {
-                expect(oldEntry).not.toBe(newEntry);
+            it('index [' + (i-1) + '] and [' + i + '] are not equal', function(done) {
+                expect(oldHref).not.toBe(newHref);
                 done();
             });
 
